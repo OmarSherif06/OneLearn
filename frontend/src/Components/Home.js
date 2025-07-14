@@ -3,7 +3,7 @@ import image from '../images/kid.png'
 
 function Home() {
   return (
-    <>
+    <div className={styles.container}>
 
     <div className={styles.parent}>
 
@@ -19,7 +19,7 @@ function Home() {
       <p>Challenge yourself with dynamic, interactive quizzes designed to boost understanding, enhance memory retention, and make learning more engaging and effective. </p>
       <br/>
       <button> Explore Quizees</button>
-    </>
+    </div>
   );
 }
 
