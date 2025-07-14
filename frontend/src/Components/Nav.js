@@ -15,6 +15,7 @@ function Nav() {
             </div>
 
             <div className={styles.buttons}>
+                {/* <button>Home</button> */}
                 <button>Login</button>
                 <button>Signup</button>
 
