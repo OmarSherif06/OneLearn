@@ -1,6 +1,9 @@
 const express = require('express');
+const cors = require('cors')
 const app = express();
 const PORT = 3001;
+
+app.use(cors())
 
 app.get('/questions/:amount', async (req, res) => {
   const amount = parseInt(req.params.amount);
@@ -10,7 +13,7 @@ app.get('/questions/:amount', async (req, res) => {
   }
 
   try {
-    const url = `https://opentdb.com/api.php?amount=${amount}&category=18&difficulty=easy&type=multiple`;
+    const url = `https://opentdb.com/api.php?amount=${amount}&category=18&difficulty=medium&type=multiple`;
     const response = await fetch(url);
     const data = await response.json();
 

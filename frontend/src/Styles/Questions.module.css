@@ -1,0 +1,50 @@
+.container {
+    height: 50vh;
+
+    border: 3px solid #b2b2b2;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buttons button {
+    padding: 7px 200px;
+}
+
+/* Progress Bar */
+.progressBar {
+    border: 5px solid #b2b2b2;
+    border-radius: 15px;
+
+    position: relative;
+    height: 7%;
+    width: 75%;
+    overflow: hidden;
+}
+
+.progressBar .progress {
+    background-color: green;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+
+    transition: width 2s ease-in-out;
+}
+
+.correct {
+    background-color: #4caf50;
+    color: white;
+}
+
+.wrong {
+    background-color: #f44336;
+    color: white;
+}
