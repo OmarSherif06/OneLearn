@@ -1,0 +1,18 @@
+.Contact ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.Contact .boxmail{
+    border: 1px black solid;
+    padding: 20px;
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #eee;
+    width: 140px;
+    height: 140px;
+}
