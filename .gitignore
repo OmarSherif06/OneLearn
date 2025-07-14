@@ -1,0 +1,50 @@
+# Root-level ignores
+.env
+.DS_Store
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.swp
+
+# macOS
+Thumbs.db
+.DS_Store
+
+# Editor-specific
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs
+*.log
+
+# OS-specific
+ehthumbs.db
+Icon?
+Desktop.ini
+
+#####################
+# Frontend (React)  #
+#####################
+frontend/node_modules/
+frontend/build
+frontend/.env
+frontend/.DS_Store
+
+####################
+# Backend (Express)#
+####################
+api/node_modules/
+api/.env
+api/.DS_Store
+
+# Optional: Ignore coverage reports (if using Jest or other tools)
+coverage/
+frontend/coverage/
+api/coverage/
