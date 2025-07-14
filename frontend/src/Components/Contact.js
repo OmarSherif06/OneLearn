@@ -1,41 +1,32 @@
-import styles from "../Styles/Contact.module.css"
+import styles from '../Styles/Contact.module.css';
 
 function Contact() {
-    return(
-        <div className={styles.Contact}>
-            <br></br>
-            <h3><b>Contact Us</b></h3>
-            <br></br>
-                <ul>
-                    <div className={styles.boxmail}>
-                    <li>
-                        <b><a href="mailto:3abdohany7@gmail.com">Email: Abdelrahman Hany</a></b>
-                    </li>
-                    </div>
-                    <div className={styles.boxmail}>
-                    <li>
-                       <b><a href="mailto:omarserag1046@gmail.com">Email: Omar Ali</a></b>
-                    </li>
-                    </div>
-                    <div className={styles.boxmail}>
-                    <li>
-                        <b><a href="mailto:omarwalid882006@gmail.com">Email: Omar Walid</a></b>
-                    </li>
-                    </div>
-                    <div className={styles.boxmail}>
-                    <li>
-                        <b><a href="mailto:abdallahany716@gmail.com">Email: Abdalla Hany</a></b>
-                    </li>
-                    </div>
-                    <div className={styles.boxmail}>
-                    <li>
-                        <b><a href="mailto:omar@gmail.com">Email: Omar Sherif</a></b>
-                    </li>
-                    </div>
-                </ul>
-            </div>
-        
-    );
+  return (
+    <div className={styles.container}>
+        <h1 className={styles.content}>
+          <span>Get in touch</span>
+        </h1>
 
+        <form className={styles.form}>
+          <label>
+            Name:
+            <input type="text" name="name" placeholder="Your Name" required />
+          </label>
+
+          <label>
+            Email:
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            Message:
+            <textarea name="message" placeholder="Your message..." rows="5" required></textarea>
+          </label>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+  );
 }
+
 export default Contact;
