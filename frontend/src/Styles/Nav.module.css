@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 25px 0 100px; 
+
+    /* position: fixed; */
+    z-index: 9999;
+}
+
+.title {
+    display: flex;
+    gap: 15px;
+}
+
+.title h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.title a {
+    text-decoration: none;
+    color: rgba(62, 62, 62, 1);
+    margin-top: 3px;
+
+    user-select: none;
+}
+
+.logo {
+    font-size: 25px;
+    margin-top: -5px;
+
+    user-select: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    
+    border: none;
+    border-radius: 5px;
+
+    padding: 10px 20px;
+    font-weight: bold;
+    
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+    transform: scale(0.95);
+}
