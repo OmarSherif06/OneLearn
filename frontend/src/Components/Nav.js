@@ -1,11 +1,17 @@
 import styles from '../Styles/Nav.module.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 function Nav() {
 
     const [isDark, setDark] = useState(false);
-
+    useEffect(() =>{
+        if (isDark) {
+            document.body.classList.add("darkMode")
+        } else {
+            document.body.classList.remove("darkMode")
+        }
+    })
     return (
         <div className={styles.nav}>
             <div className={styles.title}>
@@ -18,15 +24,17 @@ function Nav() {
                 {/* <button>Home</button> */}
                 <button>Login</button>
                 <button>Signup</button>
+                <button><a href='#Contactus' id='contact'>Contact us</a> </button>
 
                 <button 
-                className={styles.theme}
                 onClick={() => {setDark(!isDark)}}
                 >
                     {(isDark ? "Light" : "Dark")}</button>
+                    
             </div>
         </div>
     )
+    
 }
 
 export default Nav;

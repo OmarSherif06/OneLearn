@@ -4,7 +4,6 @@ import Home from "./Components/Home.js";
 import About from "./Components/About.js";
 import Contact from "./Components/Contact.js";
 import Questions from "./Components/Questions.js"
-
 function App() {
 
   return (
@@ -17,7 +16,6 @@ function App() {
         <section id='Questions'><Questions /></section>
         <section id='About'><About /></section> 
         <section id="Contact"><Contact /></section>
-
       </main>
       
     </div>

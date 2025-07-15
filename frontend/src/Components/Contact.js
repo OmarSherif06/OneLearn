@@ -2,6 +2,7 @@ import styles from '../Styles/Contact.module.css';
 
 function Contact() {
   return (
+    <section id='Contactus'>
     <div className={styles.container}>
         <h1 className={styles.content}>
           <span>Get in touch</span>
@@ -26,6 +27,7 @@ function Contact() {
           <button type="submit">Send Message</button>
         </form>
       </div>
+      </section>
   );
 }
 
