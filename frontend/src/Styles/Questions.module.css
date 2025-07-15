@@ -122,3 +122,33 @@
 
     gap: 30px;
 }
+
+.dark {
+  background-color: #181818 !important;
+  color: #f1f1f1 !important;
+}
+
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: #232323 !important;
+  color: #f1f1f1 !important;
+  border-color: #444 !important;
+}
+
+.dark button {
+  background-color: #333 !important;
+  color: #f1f1f1 !important;
+}
+
+.dark .correct {
+  background: #4CAF50 !important;
+  color: #fff !important;
+  border: 1px solid #388e3c !important;
+}
+
+.dark .wrong {
+  background: #f44336 !important;
+  color: #fff !important;
+  border: 1px solid #b71c1c !important;
+}

@@ -23,17 +23,15 @@ code {
 
 body.darkMode{
   background-color: #252424;
-  color:white;
+  color: white;
 }
 
-
-
 .sidebar{
-  position:fixed;
-  top:0;
-  left:-255px;
-  color:white;
-  transition:all 0.5s;
+  position: fixed;
+  top: 0;
+  left: -255px;
+  color: white;
+  transition: all 0.5s;
   height: 100%;
 }
 .active{
@@ -51,5 +49,6 @@ body.darkMode{
   left: 0;
 }
 
-
-
+.mainContentSection {
+  margin-bottom: 80px;
+}

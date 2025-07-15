@@ -1,8 +1,8 @@
 import styles from '../Styles/About.module.css';
 
-function About() {
+function About({ darkMode }) {
   return (
-    <div className={styles.About}>
+    <div className={`${styles.About} ${darkMode ? styles.dark : ""}`}>
       <h2>About</h2>
       <p>
         We are a passionate group of developers committed to building a powerful and user-friendly platform.

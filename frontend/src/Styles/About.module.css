@@ -36,3 +36,8 @@ h2 {
     max-width: 600px;
     margin: 0 auto;
 }
+
+.dark {
+  background-color: #181818 !important;
+  color: #f1f1f1 !important;
+}

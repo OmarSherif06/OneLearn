@@ -1,9 +1,9 @@
 import styles from '../Styles/Contact.module.css';
 
-function Contact() {
+function Contact({ darkMode }) {
   return (
     <section id='Contactus'>
-    <div className={styles.container}>
+      <div className={`${styles.container} ${darkMode ? styles.dark : ""}`}>
         <h1 className={styles.content}>
           <span>Contact</span>
         </h1>
@@ -27,7 +27,7 @@ function Contact() {
           <button type="submit">Send Message</button>
         </form>
       </div>
-      </section>
+    </section>
   );
 }
 

@@ -1,7 +1,7 @@
 import styles from "../Styles/Questions.module.css";
 import { useState, useEffect } from 'react';
 
-function Questions() {
+function Questions({ darkMode }) {
     const [score, setScore] = useState(0);
     const [questions, setQuestions] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,7 +48,7 @@ function Questions() {
 
     if (!Array.isArray(questions) || questions.length === 0) {
         return (
-            <div className={styles.containerBefore}>
+            <div className={`${styles.containerBefore} ${darkMode ? styles.dark : ""}`}>
                 <section>
                     <label>Category:</label>
                     <select
@@ -118,7 +118,7 @@ function Questions() {
 
     if (currentIndex >= questions.length) {
         return (
-            <div className={styles.containerAfter}>
+            <div className={`${styles.containerAfter} ${darkMode ? styles.dark : ""}`}>
                 <div className={styles.progressBar}>
                     <div className={styles.progress} style={{ width: "100%" }}></div>
                 </div>
@@ -133,7 +133,7 @@ function Questions() {
     const progressPercent = (currentIndex / questions.length) * 100;
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${darkMode ? styles.dark : ""}`}>
             <div className={styles.progressBar}>
                 <div className={styles.progress} style={{ width: progressPercent + "%" }}></div>
             </div>
