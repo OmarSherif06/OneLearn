@@ -41,3 +41,23 @@ h2 {
   background-color: #181818 !important;
   color: #f1f1f1 !important;
 }
+
+@media (max-width: 900px) {
+    .About {
+        padding: 1.2rem 0.5rem;
+        max-width: 98vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .About {
+        padding: 0.5rem 0.2rem;
+        border-radius: 8px;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .About p {
+        font-size: 0.95rem;
+    }
+}

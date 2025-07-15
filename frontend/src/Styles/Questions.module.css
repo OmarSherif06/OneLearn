@@ -152,3 +152,25 @@
   color: #fff !important;
   border: 1px solid #b71c1c !important;
 }
+
+@media (max-width: 900px) {
+    .container, .containerAfter {
+        padding: 20px;
+        max-width: 98vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .container, .containerAfter {
+        padding: 8px;
+        max-width: 100vw;
+        border-radius: 8px;
+    }
+    .container h3, .containerAfter h2 {
+        font-size: 1.1rem;
+    }
+    .buttons button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}

@@ -62,3 +62,28 @@ body.darkMode {
 .sidebar.active {
   left: 0;
 }
+
+@media (max-width: 1200px) {
+  body {
+    margin: 0 4vw;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    margin: 0 1vw;
+  }
+  .mainContentSection {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    font-size: 15px;
+  }
+  .mainContentSection {
+    margin-bottom: 20px;
+  }
+}
