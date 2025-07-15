@@ -7,8 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #F5F5F5;
 }
-html{
+
+html {
   scroll-behavior: smooth;
+}
+
+.mainContentSection {
+  margin-bottom: 80px;
 }
 
 code {
@@ -16,39 +21,44 @@ code {
     monospace;
 }
 
-#contact{
+#contact {
     text-decoration: none;
     color:rgb(239, 229, 229);
 }
 
-body.darkMode{
+body.darkMode {
   background-color: #252424;
   color: white;
 }
 
-.sidebar{
+.sidebar {
   position: fixed;
   top: 0;
   left: -255px;
   color: white;
   transition: all 0.5s;
   height: 100%;
+  padding: 20px 0 20px 20px;
 }
-.active{
-  position:fixed;
-  width:255px;
+
+.sidebar li:hover {
+  border: 2px solid #f1f1f1;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #333;
+}
+
+.active {
+  position: fixed;
+  width: 255px;
   height: 100%;
   background-color: #222;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: 1000;
   transition: left 0.3s ease-in-out;
 }
 
-.sidebar.active{
+.sidebar.active {
   left: 0;
-}
-
-.mainContentSection {
-  margin-bottom: 80px;
 }
