@@ -9,7 +9,7 @@ function About() {
         Our team is divided into frontend and backend specialists working closely together to create seamless experiences.
       </p>
 
-      <section>
+      <section className='aboutSection'>
         <h2>💻 Frontend Team</h2>
         <p>Crafting beautiful and intuitive user interfaces:</p>
         <ul>
@@ -19,7 +19,7 @@ function About() {
         </ul>
       </section>
 
-      <section>
+      <section className='aboutSection'>
         <h2>🛠️ Backend Team</h2>
         <p>Ensuring everything runs smoothly behind the scenes:</p>
         <ul>
