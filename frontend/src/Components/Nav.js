@@ -1,9 +1,7 @@
 import styles from '../Styles/Nav.module.css'
 import { useState } from 'react'
 
-
 function Nav() {
-
     const [isDark, setDark] = useState(false);
 
     return (
@@ -11,7 +9,6 @@ function Nav() {
             <div className={styles.title}>
                 <p className={styles.logo}>🎓</p>
                 <h3>OneLearn</h3>
-                <a href="#">Courses</a>
             </div>
 
             <div className={styles.buttons}>
