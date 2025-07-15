@@ -1,19 +1,21 @@
 const express = require('express');
-const cors = require('cors')
+const cors = require('cors');
+const he = require('he');
 const app = express();
 const PORT = 3001;
 
-app.use(cors())
+app.use(cors());
 
-app.get('/questions/:amount', async (req, res) => {
+app.get('/questions/:category/:difficulty/:amount', async (req, res) => {
   const amount = parseInt(req.params.amount);
+  const category = req.params.category;
+  const difficulty = req.params.difficulty;
 
-  if (isNaN(amount) || amount < 1 || amount > 25) {
+  if (isNaN(amount) || amount < 1 || amount > 25) 
     return res.status(400).json({ error: 'Amount must be a number between 1 and 25' });
-  }
 
   try {
-    const url = `https://opentdb.com/api.php?amount=${amount}&category=18&difficulty=medium&type=multiple`;
+    const url = `https://opentdb.com/api.php?amount=${amount}&category=${category}&difficulty=${difficulty.toLowerCase()}&type=multiple`;
     const response = await fetch(url);
     const data = await response.json();
 
@@ -34,11 +36,7 @@ app.get('/questions/:amount', async (req, res) => {
 });
 
 function decodeHtml(html) {
-  return html.replace(/&#039;/g, `'`)
-             .replace(/&quot;/g, `"`)
-             .replace(/&amp;/g, `&`)
-             .replace(/&lt;/g, `<`)
-             .replace(/&gt;/g, `>`);
+  return he.decode(html);
 }
 
 function shuffle(array) {

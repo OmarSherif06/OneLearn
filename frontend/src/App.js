@@ -12,10 +12,11 @@ function App() {
 
       <main className="main-content">
 
-        <section id='Home'><Home /></section> 
-        <section id='Questions'><Questions /></section>
-        <section id='About'><About /></section> 
-        <section id="Contact"><Contact /></section>
+        <section className="mainContentSection"><Home /></section> 
+        <section className="mainContentSection"><Questions /></section>
+        <section className="mainContentSection"><About /></section> 
+        <section className="mainContentSection"><Contact /></section>
+
       </main>
       
     </div>

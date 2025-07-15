@@ -8,9 +8,10 @@ function About() {
         We are a passionate group of developers committed to building a powerful and user-friendly platform.
         Our team is divided into frontend and backend specialists working closely together to create seamless experiences.
       </p>
-        <br/>
-      <section>
-        <h2>Frontend Team</h2>
+
+      <section className='aboutSection'>
+        <h2>💻 Frontend Team</h2>
+        <p>Crafting beautiful and intuitive user interfaces:</p>
         <ul>
           <li>Abdelrahman Hany</li>
           <li>Omar Ali</li>
@@ -18,8 +19,9 @@ function About() {
         </ul>
       </section>
 
-      <section>
-        <h2>Backend Team</h2>
+      <section className='aboutSection'>
+        <h2>🛠️ Backend Team</h2>
+        <p>Ensuring everything runs smoothly behind the scenes:</p>
         <ul>
           <li>Abdalla Hany</li>
           <li>Omar Sherif</li>

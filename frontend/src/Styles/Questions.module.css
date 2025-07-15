@@ -1,50 +1,124 @@
 .container {
-    height: 50vh;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
 
-    border: 3px solid #b2b2b2;
-    border-radius: 20px;
+.progressBar {
+    height: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+.progress {
+    height: 100%;
+    background: #4a6fa5;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    width: 100%;
 }
 
 .buttons button {
-    padding: 7px 200px;
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    background: white;
+    color: #333;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
-/* Progress Bar */
-.progressBar {
-    border: 5px solid #b2b2b2;
-    border-radius: 15px;
-
-    position: relative;
-    height: 7%;
-    width: 75%;
-    overflow: hidden;
-}
-
-.progressBar .progress {
-    background-color: green;
-    height: 100%;
-    border-radius: 15px 0 0 15px;
-
-    transition: width 2s ease-in-out;
+.buttons button:hover:not(:disabled) {
+    background: #f5f5f5;
 }
 
 .correct {
-    background-color: #4caf50;
-    color: white;
+    background: #4CAF50 !important;
+    color: white !important;
 }
 
 .wrong {
-    background-color: #f44336;
-    color: white;
+    background: #f44336 !important;
+    color: white !important;
+}
+
+.containerBefore {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.containerBefore section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.containerBefore label {
+    font-weight: 600;
+    color: #333;
+}
+
+.containerBefore select,
+.containerBefore input[type="number"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
+}
+
+.containerBefore select:focus,
+.containerBefore input[type="number"]:focus {
+    outline: none;
+    border-color: #4a6fa5;
+}
+
+.containerBefore button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.containerAfter {
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 30px;
 }

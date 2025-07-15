@@ -1,8 +1,4 @@
-.content {
-    text-transform: capitalize;
-}
-
-span {
+.content > span {
     margin-bottom: 10px;
     display: block;
     font-weight: 400;
@@ -11,21 +7,22 @@ span {
 
 .bold {
     display: inline;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
-p {
+.container p {
     color: rgba(150, 152, 154, 1);
+    text-align: left;
+    max-width: 50%;
 }
 
 .parent {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
-img {
-    width:300px;
-    height:300px;
+.parent > img {
+    width: 300px;
     margin-top: -46px;
 }
 

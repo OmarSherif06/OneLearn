@@ -5,7 +5,7 @@ function Contact() {
     <section id='Contactus'>
     <div className={styles.container}>
         <h1 className={styles.content}>
-          <span>Get in touch</span>
+          <span>Contact</span>
         </h1>
 
         <form className={styles.form}>
