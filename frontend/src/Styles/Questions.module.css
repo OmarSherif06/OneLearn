@@ -153,6 +153,12 @@
   border: 1px solid #b71c1c !important;
 }
 
+.general {
+    text-align: center;
+    width: 100%; 
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 900px) {
     .container, .containerAfter {
         padding: 20px;

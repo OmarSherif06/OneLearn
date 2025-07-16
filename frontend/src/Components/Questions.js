@@ -49,6 +49,9 @@ function Questions({ darkMode }) {
     if (!Array.isArray(questions) || questions.length === 0) {
         return (
             <div className={`${styles.containerBefore} ${darkMode ? styles.dark : ""}`}>
+                <div className="general">
+                    <h3 style={{ textAlign: 'center', width: '100%' }}>General questions</h3>
+                </div>
                 <section>
                     <label>Category:</label>
                     <select
