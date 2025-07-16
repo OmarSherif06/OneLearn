@@ -4,7 +4,9 @@ import Home from "./Components/Home.js";
 import About from "./Components/About.js";
 import Contact from "./Components/Contact.js";
 import Questions from "./Components/Questions.js"
+import Footer from "./Components/Footer.js";
 import { useState, useEffect } from "react";
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -36,6 +38,9 @@ function App() {
           <Contact darkMode={darkMode} />
         </section>
       </main>
+      <div className="footer">
+        <Footer/>
+      </div>
     </div>
   );
 }
