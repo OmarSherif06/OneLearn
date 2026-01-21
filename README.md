@@ -4,7 +4,7 @@ OneLearn is a modern web application for interactive learning and quizzes. Built
 
 ---
 
-## 🌟 Features
+## Features
 
 - **Interactive Quizzes:** Choose category, difficulty, and number of questions.
 - **Live Score Tracking:** See your results instantly.
@@ -14,7 +14,7 @@ OneLearn is a modern web application for interactive learning and quizzes. Built
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 ![Home Page](images/home-screenshot.png)
 ![Quiz Page](images/quiz-screenshot.png)
@@ -22,7 +22,7 @@ OneLearn is a modern web application for interactive learning and quizzes. Built
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -63,41 +63,11 @@ OneLearn is a modern web application for interactive learning and quizzes. Built
 
 ---
 
-## 🗂️ Project Structure
-
-```
-OneLearn/
-├── api/           # Express backend
-│   ├── index.js
-│   └── package.json
-├── frontend/      # React frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── Components/
-│   │   ├── Styles/
-│   │   ├── images/
-│   │   └── ...
-│   └── package.json
-└── README.md
-```
-
 ---
 
-## 👥 Team
+## Team
 
 **Frontend:** Abdelrahman Hany, Omar Ali, Omar Walid  
 **Backend:** Abdalla Hany, Omar Sherif
-
----
-
-## 📄 License
-
-This project is licensed under the ISC License.
-
----
-
-## 🤝 Contributing
-
-Feel free to open issues or pull requests for suggestions and improvements!
 
 ---
